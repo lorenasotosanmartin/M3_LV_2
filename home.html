@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Clínica Chillán</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header class="header d-flex flex-column flex-md-row align-items-center px-5">
+        <a class="header__link" href="home.html">
+            <img class="link__img" src="assets/img/logo.png" alt="Logo clinica chillán" title="Logo clinica chillán"
+                width="100" height="45">
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="home.html">Inicio</a></li>
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="equipment.html">Equipo</a></li>
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="col-md-4">
+            <button class="header__button btn btn-outline-primary mr-2" type="button" onclick="Reservar()">Reservar cita<i
+                    class="button__icon bi bi-clipboard"></i></button>
+            <button type="button" class="btn btn-primary position-relative" id="ingreso">
+                Ingreso paciente
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="primary py-4" tabindex="0">
+            <div class="primary__content container">
+                <div class="primary__row row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="primary__title">Bienvenido a clínica Chillán</h1>
+                        <p class="primary__text secondary">Somos la principal clínica de la comuna Chillán y
+                            sus
+                            alrededores,nos
+                            caracterizamos por
+                            nuestro amplio equipo de profesional de la salud y por brindar un servicio grato y de
+                            calidad a
+                            cada
+                            uno
+                            de nuestros pacientes.</p>
+                        <button class="primary__btn btn btn-primary" type="button"
+                            onclick="listarServiciosMedicos()">Conoce más<i
+                                class="button__icon bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <section class="cards" tabindex="0">
+                    <div class="cards__content">
+                        <h2 class="cards__title" id="title_service"></h2>
+                        <div class="cards__row" id="cards_Service">
+                        </div>
+                    </div>
+                </section>
+        </section>
+        <section class="cards mt-0" tabindex="0">
+            <div class="cards__content">
+                <div class="cards__row">
+                    <div class="col-md-6">
+                        <div class="card p-4 border-0">
+                            <i class="card__icon bi bi-hospital" title="icono misiòn"></i>
+                            <h3 class="card__title">Misión</h3>
+                            <p class="card__text text-body-secondary">Nuestra misión es brindar un servicio de salud con
+                                los más altos
+                                estándares de
+                                calidad a los
+                                habitantes de la comuna, garantizando la efectividad, ética laboral y amabilidad con
+                                nuestros
+                                pacientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4 border-0">
+                            <i class="card__icon bi bi-eye" title="icono visión"></i></i>
+                            <h3 class="card__title">Visión</h3>
+                            <p class="card__text text-body-secondary">Ser el principal centro de salud de la región,
+                                ofreciendo a todos
+                                los
+                                pacientes
+                                la mejor experiencia
+                                en la atención integral y de alta complejidad, con los más altos estandares de
+                                calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cards" tabindex="0">
+            <div class="cards__content">
+                <h2 class="cards__title mb-5">Testimonios de nuestros pacientes</h2>
+                <div class="cards__row">
+                    <div class="col-md-3">
+                        <div class="card p-4">
+                            <p class="card__text text-body-secondary">"Mi experiencia con Clínica Chillán, fue muy
+                                buena, me
+                                brindaron una
+                                atención
+                                rápida y
+                                con excelentes profesionales, que explican en detalle tu diagnóstico y tratamiento a
+                                seguir"
+                            </p>
+                            <p class="card__text card__text--strong">Victoria Solis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4">
+                            <p class="card__text text-body-secondary">"Recurrí a urgencias de Clinica Chillán y recibi
+                                un
+                                trato amable por
+                                parte
+                                de sus
+                                profesionales y personal administrativo,ademas, me brindaron una atención rápida y
+                                efectiva"
+                            </p>
+                            <p class="card__text card__text--strong">María Ignacia Sanhueza</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4">
+                            <p class="card__text text-body-secondary">"Clínica Chillán, cuenta con una amplia gama de
+                                profesionales medicos
+                                de
+                                excelencia,
+                                que brindan un gran trato a sus pacientes con tratamientos efectivos, sin duda, la
+                                recomiendo"
+                            </p>
+                            <p class="card__text card__text--strong">Andrés Pérez</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4">
+                            <p class="card__text text-body-secondary">"Me opere hace un mes en Clínica Chillán con
+                                excelentes resultados y
+                                recibí un
+                                trato amable y
+                                cordial por para cada uno de sus funcionarios, estoy muy conforme con el servicio
+                                brindado"
+                            </p>
+                            <p class="card__text card__text--strong">Andrea Poblete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer mt-4">
+        <div class="footer__content">
+            <div class="footer__row">
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary"
+                            href="home.html">Inicio</a></li>
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary"
+                            href="equipment.html">Equipo</a></li>
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary" Contacto
+                            href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__row">
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item nav-item"><i class="list__icon bi bi-envelope" title="icono email"></i><a
+                            class="list__link" href="mailto:info@clinicachillan.cl">info@clinicachillan.cl </a><i
+                            class="bi bi-dash"></i> </li>
+                    <li class="list__item nav-item"><i class="list__icon bi bi-telephone" title="icono telefono"></i><a
+                            class="list__link" href="tel:6007891264">600 789 1264 </a><i class="bi bi-dash"></i> </li>
+                    <li class="list__item nav-item"><i class="list__icon bi bi-telephone" title="icono telefono"></i><a
+                            class="list__link" href="tel:6007891265">600 789 1265 </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="footer__row d-flex flex-wrap justify-content-center align-items-center">
+                <span class="footer__title mb-md-0 text-body-secondary">© 2024, Clínica Chillán</span>
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-facebook"
+                                title="icono facebook"></i></a></li>
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-instagram"
+                                title="icono instagram"></i></a></li>
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-twitter-x"
+                                title="icono twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./data/app.js"></script>
+    <script type="text/javascript" src="./data/data.js"></script>
+    <script type="text/javascript" src="./data/queue.js"></script>
+    <script type="text/javascript" src="./data/stack.js"></script>
+    <script type="text/javascript" src="./data/programacion_funcional.js"></script>
+    <script type="text/javascript" src="./data/doctor.js"></script>
+    <script type="text/javascript" src="./data/event.js"></script>
+
+</body>
+
+</html>

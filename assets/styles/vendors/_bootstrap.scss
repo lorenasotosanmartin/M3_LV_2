@@ -1,0 +1,21 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.text-body-secundary {
+    color: #76787C;
+}
+
+.btn-outline-primary {
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+}
+
+h3 {
+    font-size: calc(1rem + 0.3vw);
+    font-weight: bold;
+}
+
+h4 {
+    font-size: calc(0.9rem + 0.3vw);
+    font-style: italic
+}

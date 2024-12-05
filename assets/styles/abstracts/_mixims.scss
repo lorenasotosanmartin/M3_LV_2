@@ -1,0 +1,9 @@
+@mixin button-primary($width: auto) {
+    border: none;
+    color: $ligth-color;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: $primary-color;
+    width: $width;
+  }

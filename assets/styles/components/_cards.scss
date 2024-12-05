@@ -1,0 +1,53 @@
+
+
+.cards {
+    margin: 2rem 0rem;
+}
+
+.cards_content {
+    display: flex;
+}
+
+.cards__row {
+    display: flex;
+}
+
+.card {
+  //  padding: 2rem;
+    margin: 1rem;
+}
+
+.card__text--strong {
+    font-weight: bold;
+}
+
+.card__img {
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.card__icon {
+    color: $primary-color;
+    font-size: 4rem;
+}
+
+
+
+
+/*Media Queries*/
+@media (max-width: 575.98px) {
+    .cards__row {
+        display: block;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .cards__row {
+        display: block;
+    }
+}
+  
+@media (max-width: 991.98px) {
+    
+}

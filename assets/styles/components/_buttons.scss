@@ -1,0 +1,26 @@
+.header__button {
+    background-color: $ligth-color;
+    color: $primary-color;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid $primary-color;
+}
+
+.header__button:hover {
+    background-color: $primary-color;
+    color: $ligth-color;
+}
+
+.card__button {
+    @include button-primary;
+}
+
+.form__button {
+    @include button-primary ($width: 100%);
+}
+
+.button__icon {
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}

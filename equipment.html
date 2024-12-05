@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Clinica Chillán</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+
+</head>
+
+<body>
+
+    <header class="header d-flex flex-column flex-md-row align-items-center px-4">
+        <a class="header__link" href="home.html">
+            <img class="link__img" src="assets/img/logo.png" alt="Logo clinica chillán" title="Logo clinica chillán"
+                width="100" height="45">
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="home.html">Inicio</a></li>
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="equipment.html">Equipo</a></li>
+                <li class="nav__item nav-item"><a class="nav__link nav-link px-2 text-body-secondary"
+                        href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="header__button btn btn-outline-primary" type="button" onclick="Reservar()">Reservar cita<i
+                class="button__icon bi bi-clipboard"></i></button>
+    </header>
+
+
+    <main class="main">
+
+        <section class="primary py-4" tabindex="0">
+            <div class="primary__content container">
+                <div class="primary__row row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="primary__title">Excelencia profesional</h1>
+                        <p class="primary__text text-body-secondary">Nuestra clínica está comprometida con brindar un
+                            servicio de calidad a
+                            nuestro pacientes, es por esto, que contamos con una amplia gama de profesionales
+                            capacitados y
+                            dispuestos a brindar la mejor atención a cada uno de nuestros pacientes</p>
+                    </div>
+        </section>
+
+        <section class="cards" tabindex="0">
+            <div class="cards__content container">
+                <h2 class="cards__title mb-5">Conoce a nuestro equipo de profesionales</h2>
+                <div class="cards__row row" id="cards_doctores">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer mt-4">
+        <div class="footer__content">
+            <div class="footer__row">
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary"
+                            href="home.html">Inicio</a></li>
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary"
+                            href="equipment.html">Equipo</a></li>
+                    <li class="list__item nav-item"><a class="list__link nav-link px-2 text-body-secondary" Contacto
+                            href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__row">
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item nav-item"><i class="list__icon bi bi-envelope" title="icono email"></i><a
+                            class="list__link" href="mailto:info@clinicachillan.cl">info@clinicachillan.cl </a><i
+                            class="bi bi-dash"></i> </li>
+                    <li class="list__item nav-item"><i class="list__icon bi bi-telephone" title="icono telefono"></i><a
+                            class="list__link" href="tel:6007891264">600 789 1264 </a><i class="bi bi-dash"></i> </li>
+                    <li class="list__item nav-item"><i class="list__icon bi bi-telephone" title="icono telefono"></i><a
+                            class="list__link" href="tel:6007891265">600 789 1265 </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="footer__row d-flex flex-wrap justify-content-center align-items-center ">
+                <span class="footer__title mb-md-0 text-body-secondary">© 2024, Clínica Chillán</span>
+                <ul class="footer__list nav justify-content-center p-1">
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-facebook"
+                                title="icono facebook"></i></a></li>
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-instagram"
+                                title="icono instagram"></i></a></li>
+                    <li class="list__item"><a class="list__link" href="#"><i class="list__icon bi bi-twitter-x"
+                                title="icono twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./data/app.js"></script>
+    <script type="text/javascript" src="./data/data.js"></script>
+    <script type="text/javascript" src="./data/queue.js"></script>
+    <script type="text/javascript" src="./data/stack.js"></script>
+    <script type="text/javascript" src="./data/array.js"></script>
+    <script type="text/javascript" src="./data/programacion_funcional.js"></script>
+    <script type="text/javascript" src="./data/doctor.js"></script>
+</body>
+
+</html>
