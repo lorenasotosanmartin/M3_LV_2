@@ -1,12 +1,12 @@
 # Taller: Programación Funcional, Orientada a Eventos y POO en el Proyecto del Hospital
 ## Descripción
 En este proyecto se aplican los tres paradigmas de programación en JavaScript: funcional, orientada a eventos y orientada a objetos en el proyecto titulado “Clínica Chillán”.
-## Programación funcional
-para la programación funcional se integran funciones currying, y funcion flecha asociados a los metodos
-## Programación orientada a eventos
-se implementa event listener para escuchar eventos asociados a acciones del usuario, en este caso, al presionar el botón de enviar en el formulario de contacto se captura un evento y se envia un mensaje el usuario.
-## Programación orientada a objetos
-se crear la clase Doctor y la subclase Cirugano herencia de doctor, aplicando encapsulación al atributo asociado a los años de experiencia mediante setter and getter y polimorfismo en la función.
+### Programación funcional
+Para la programación funcional se integran funciones currying, y funcion flecha asociados a los metodos
+### Programación orientada a eventos
+Se implementa event listener para escuchar eventos asociados a acciones del usuario, en este caso, al presionar el botón de enviar en el formulario de contacto se captura un evento y se envia un mensaje el usuario.
+### Programación orientada a objetos
+Se crear la clase Doctor y la subclase Cirugano herencia de doctor, aplicando encapsulación al atributo asociado a los años de experiencia mediante setter and getter y polimorfismo en la función.
 ### Visualización del proyecto
 Para visualizar este proyecto se necesita que previamente cuentes con la instalación de:
 - **Git**: [sitio de descarga] (https://git-scm.com/downloads)
